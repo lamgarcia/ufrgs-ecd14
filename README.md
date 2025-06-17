@@ -55,7 +55,7 @@ Aluno: Luiz Antônio MArques Garcia
 
 **Clone o repositório:**
 
-    ```
+    ```bash
     ❯ git clone ../atp05
     ```
 **Crie os containers:**
