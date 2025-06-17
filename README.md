@@ -47,7 +47,7 @@ Aluno: Luiz Antônio MArques Garcia
     │   ├── postgres-pvc.yaml
     │   └── postgres-service.yaml
     ├── querys.txt
-    ├── readme2.md
+    ├── README.md
     └── stop_containers.sh
 ```
 ## Installação 
@@ -55,20 +55,21 @@ Aluno: Luiz Antônio MArques Garcia
 
 **Clone o repositório:**
 
-    ```bash
-    ❯ git clone ../atp05
-    ```
+```sh
+    git clone https://github.com/lamgarcia/ufrgs-ecd14.git
+
+```
 **Crie os containers:**
 
-    ```
-    ❯ sh create_images.sh
-    ```
+```sh
+    sh create_images.sh
+```
 
 **Inicialize os containers:**
 
-    ```
-    ❯ sh init_containers.sh
-    ```
+```sh
+    sh init_containers.sh
+```
 
 ## Uso dos Microserviços
 
@@ -79,6 +80,7 @@ No navegador abra em http://localhost:30004/graphql
 
 **CRIAR CONTATOS**
 
+<pre>
 mutation {
   createContato(input: {
     nome: "Joao da Silva",
@@ -111,8 +113,10 @@ mutation {
     }
   }
 }
+</pre>
 
 **LISTAR TODOS OS CONTATOS**
+<pre>
 query {
   contatos {
     id
@@ -124,8 +128,10 @@ query {
     }
   }
 }
+</pre>pre>
 
 **LISTAR CONTATO POR NOME**
+<pre>
 query {
   contatosPorNome(prefixo: "joao") {
     id
@@ -137,12 +143,14 @@ query {
     }
   }
 }
-
+</pre>pre>
+    
 **EXCLUIR CONTATO**
-
+<pre>
 mutation {
   deleteContato(id: 2) {
     message
     success
   }
 }
+</pre>pre>
