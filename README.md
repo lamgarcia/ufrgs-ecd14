@@ -16,6 +16,45 @@ Aluno: Luiz Antônio Marques Garcia
 </div>
 <br>
 
+##  Serviço de Agenda com FastAPI + GraphQL
+
+Este projeto implementa uma **API RESTful** para gerenciar uma agenda de contatos com números de telefone, utilizando **FastAPI** e **SQLAlchemy** com banco de dados **PostgreSQL**.
+Também fornece uma **API GraphQL** como camada de gateway para o serviço de agenda.
+
+
+###  Funcionalidades
+
+- Criar contatos com múltiplos números de telefone
+- Listar todos os contatos
+- Consultar um contato por Nome
+- Excluir um contato e seus telefones
+
+
+###  Estrutura do Banco de Dados
+
+O sistema utiliza dois modelos principais com relacionamento **1:N (um para muitos)**:
+
+#### 📄 `contatos`
+
+| Campo     | Tipo            | Descrição                       |
+|-----------|------------------|---------------------------------|
+| `id`      | Integer (PK)     | Identificador único do contato |
+| `nome`    | String           | Nome do contato                |
+| `categoria` | Enum (`pessoal`, `familiar`, `comercial`) | Tipo de contato |
+| `telefones` | Relacionamento | Lista de telefones associados  |
+
+---
+
+#### 📄 `telefones`
+
+| Campo        | Tipo                            | Descrição                             |
+|--------------|----------------------------------|----------------------------------------|
+| `id`         | Integer (PK)                    | Identificador único do telefone       |
+| `numero`     | String                          | Número de telefone                    |
+| `tipo`       | Enum (`movel`, `fixo`, `comercial`) | Tipo de número                       |
+| `contato_id` | Foreign Key → `contatos.id`     | Referência ao contato associado       |
+
+---
 
 ## Estrutura do Projeto
 
