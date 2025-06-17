@@ -8,7 +8,7 @@ Aluno: Luiz Antônio MArques Garcia
 <!-- BADGES -->
 <!-- local repository, no metadata badges. -->
 
-<em>Built with the tools and technologies:</em>
+<em>Tecnologias:</em>
 
 <img src="https://img.shields.io/badge/SQLAlchemy-D71F00.svg?style=default&logo=SQLAlchemy&logoColor=white" alt="SQLAlchemy">
 <img src="https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?style=default&logo=GNU-Bash&logoColor=white" alt="GNU%20Bash">
@@ -55,18 +55,18 @@ Aluno: Luiz Antônio MArques Garcia
 
 **Clone o repositório:**
 
-    ```sh
+    ```
     ❯ git clone ../atp05
     ```
-**Crie os containers com o script:**
+**Crie os containers:**
 
-    ```sh
+    ```
     ❯ sh create_images.sh
     ```
 
 **Inicialize os containers:**
 
-    ```sh
+    ```
     ❯ sh init_containers.sh
     ```
 
