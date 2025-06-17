@@ -1,0 +1,56 @@
+type Query {
+  contatos: [Contato!]!
+  contato(id: Int!): Contato
+  contatosPorNome(prefixo: String!): [Contato!]!
+}
+
+type Mutation {
+  createContato(input: ContatoInput!): ContatoPayload!
+  deleteContato(id: Int!): DeletePayload!
+}
+
+type Contato {
+  id: Int!
+  nome: String!
+  categoria: CategoriaContato!
+  telefones: [Telefone!]!
+}
+
+type Telefone {
+  numero: String!
+  tipo: TipoTelefone!
+}
+
+input TelefoneInput {
+  numero: String!
+  tipo: TipoTelefone!
+}
+
+input ContatoInput {
+  nome: String!
+  categoria: CategoriaContato!
+  telefones: [TelefoneInput!]!
+}
+
+type ContatoPayload {
+  message: String!
+  contato: Contato!
+}
+
+type DeletePayload {
+  message: String!
+  success: Boolean!
+}
+
+
+enum TipoTelefone {
+  movel
+  fixo
+  comercial
+}
+
+enum CategoriaContato {
+  pessoal
+  familiar
+  comercial
+}

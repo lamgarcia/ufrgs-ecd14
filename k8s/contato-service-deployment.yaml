@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: contato-service-deployment
+  labels:
+    app: contato-service
+spec:
+  replicas: 2 #
+  selector:
+    matchLabels:
+      app: contato-service
+  template:
+    metadata:
+      labels:
+        app: contato-service
+    spec:
+      containers:
+        - name: contato-service
+          image: contato-service:latest # Nome da imagem Docker local
+          imagePullPolicy: IfNotPresent  # Busca a imagem localmente se disponível 
+          ports:
+            - containerPort: 8002
+          env:
+            - name: DATABASE_URL
+              value: postgresql://user:password@postgres-service:5432/mydatabase # Conecta ao Service do PostgreSQL

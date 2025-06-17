@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: contato-service-clusterip # Nome DNS para outros microsserviços se conectarem
+  labels:
+    app: contato-service
+spec:
+  selector:
+    app: contato-service
+  ports:
+    - protocol: TCP
+      port: 8002
+      targetPort: 8002
+  type: ClusterIP # Acessível apenas dentro do cluster

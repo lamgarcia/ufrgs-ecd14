@@ -1,0 +1,71 @@
+# LISTAR TODOS OS CONTATOS
+query {
+  contatos {
+    id
+    nome
+    categoria
+    telefones {
+      numero
+      tipo
+    }
+  }
+}
+
+# LISTAR CONTATO POR NOME
+query {
+  contatosPorNome(prefixo: "joao") {
+    id
+    nome
+    categoria
+    telefones {
+      numero
+      tipo
+    }
+  }
+}
+
+##### CRIAR CONTATOS 
+
+mutation {
+  createContato(input: {
+    nome: "Joao da Silva",
+    categoria: pessoal,
+    telefones: [
+      { numero: "11999999999", tipo: movel },
+      { numero: "1133334444", tipo: fixo }
+    ]
+  }) {
+    message
+    contato {
+      id
+      nome
+    }
+  }
+}
+
+
+mutation {
+  createContato(input: {
+    nome: "Maria da Silva",
+    categoria: comercial
+    telefones: [
+      { numero: "41839883888", tipo: movel }
+    ]
+  }) {
+    message
+    contato {
+      id
+      nome
+    }
+  }
+}
+
+# EXCLUIR CONTATO
+
+
+mutation {
+  deleteContato(id: 2) {
+    message
+    success
+  }
+}
