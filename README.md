@@ -1,23 +1,17 @@
 # ATP05  - MICROSERVIÇOS
 
-Trabalho final para disciplina ECD14 - Arquitetura de Microserviços
-Aluno: Luiz Antônio MArques Garcia
+Trabalho final para disciplina ECD14 - Arquitetura de Microserviços <br>
+Aluno: Luiz Antônio Marques Garcia
 
 <em></em>
 
 <!-- BADGES -->
 <!-- local repository, no metadata badges. -->
 
-<em>Tecnologias:</em>
-
-<img src="https://img.shields.io/badge/SQLAlchemy-D71F00.svg?style=default&logo=SQLAlchemy&logoColor=white" alt="SQLAlchemy">
-<img src="https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?style=default&logo=GNU-Bash&logoColor=white" alt="GNU%20Bash">
-<img src="https://img.shields.io/badge/FastAPI-009688.svg?style=default&logo=FastAPI&logoColor=white" alt="FastAPI">
-<img src="https://img.shields.io/badge/Docker-2496ED.svg?style=default&logo=Docker&logoColor=white" alt="Docker">
-<img src="https://img.shields.io/badge/Python-3776AB.svg?style=default&logo=Python&logoColor=white" alt="Python">
-<img src="https://img.shields.io/badge/GraphQL-E10098.svg?style=default&logo=GraphQL&logoColor=white" alt="GraphQL">
-<img src="https://img.shields.io/badge/Pydantic-E92063.svg?style=default&logo=Pydantic&logoColor=white" alt="Pydantic">
-<img src="https://img.shields.io/badge/YAML-CB171E.svg?style=default&logo=YAML&logoColor=white" alt="YAML">
+<img src="https://img.shields.io/badge/SQLAlchemy-D71F00.svg?style=default&logo=SQLAlchemy&logoColor=white" alt="SQLAlchemy"> <img src="https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?style=default&logo=GNU-Bash&logoColor=white" alt="GNU%20Bash">
+<img src="https://img.shields.io/badge/FastAPI-009688.svg?style=default&logo=FastAPI&logoColor=white" alt="FastAPI"> <img src="https://img.shields.io/badge/Docker-2496ED.svg?style=default&logo=Docker&logoColor=white" alt="Docker">
+<img src="https://img.shields.io/badge/Python-3776AB.svg?style=default&logo=Python&logoColor=white" alt="Python"> <img src="https://img.shields.io/badge/GraphQL-E10098.svg?style=default&logo=GraphQL&logoColor=white" alt="GraphQL">
+<img src="https://img.shields.io/badge/Pydantic-E92063.svg?style=default&logo=Pydantic&logoColor=white" alt="Pydantic"> <img src="https://img.shields.io/badge/YAML-CB171E.svg?style=default&logo=YAML&logoColor=white" alt="YAML">
 
 </div>
 <br>
@@ -50,7 +44,7 @@ Aluno: Luiz Antônio MArques Garcia
     ├── README.md
     └── stop_containers.sh
 ```
-## Installação 
+## Instalação 
 
 
 **Clone o repositório:**
@@ -128,7 +122,7 @@ query {
     }
   }
 }
-</pre>pre>
+</pre>
 
 **LISTAR CONTATO POR NOME**
 <pre>
@@ -143,7 +137,7 @@ query {
     }
   }
 }
-</pre>pre>
+</pre>
     
 **EXCLUIR CONTATO**
 <pre>
@@ -153,4 +147,4 @@ mutation {
     success
   }
 }
-</pre>pre>
+</pre>
