@@ -1,7 +1,8 @@
 # ATP05  - MICROSERVIÇOS
 
 Trabalho final para disciplina ECD14 - Arquitetura de Microserviços <br>
-Aluno: Luiz Antônio Marques Garcia
+Aluno: Luiz Antônio Marques Garcia <br>
+Professor responsável: Leandro Wives
 
 <em></em>
 
@@ -26,13 +27,11 @@ Também fornece uma **API GraphQL** como camada de gateway para o serviço de ag
 
 - Criar contatos com múltiplos números de telefone
 - Listar todos os contatos
-- Consultar um contato por Nome
+- Consultar um contato por nome
 - Excluir um contato e seus telefones
 
 
 ###  Estrutura do Banco de Dados
-
-O sistema utiliza dois modelos principais com relacionamento **1:N (um para muitos)**:
 
 #### 📄 `contatos`
 
