@@ -84,6 +84,7 @@ Também fornece uma **API GraphQL** como camada de gateway para o serviço de ag
 ```
 ## Instalação 
 
+Utilize um ambiente Linux com Docker ou WSL no Windows com Desktop Docker integrado.
 
 **Clone o repositório:**
 
