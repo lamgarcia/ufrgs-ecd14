@@ -95,13 +95,13 @@ Utilize um ambiente Linux com Docker ou WSL no Windows com Desktop Docker integr
 **Crie os containers:**
 
 ```sh
-    sh create_images.sh
+    ./create_images.sh
 ```
 
 **Inicialize os containers:**
 
 ```sh
-    sh init_containers.sh
+    ./init_containers.sh
 ```
 
 ## Uso dos Microserviços
